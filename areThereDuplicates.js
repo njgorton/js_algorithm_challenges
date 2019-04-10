@@ -13,10 +13,24 @@ Space - O(1)
 */
 
 function areThereDuplicates() {
+    let first = 0;
+    let second = 1;
 
+    for (let i = 0; i < arguments.length; i++) {
+        if (arguments[first] = arguments[second]) {
+            console.log("true");
+            return true;
+        } else {
+            first++;
+            second++;
+        }
+    }
+
+    console.log("false");
+    return false;
 }
 
-areThereDuplicates(1, 2, 3)
+areThereDuplicates('a', 'b', 'c')
 
 
 // Examples:
